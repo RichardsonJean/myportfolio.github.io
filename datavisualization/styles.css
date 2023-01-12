@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* CSS Document */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Lobster', cursive;
+	
+	
+}/*resets*/
+
+body{
+	font-family:  "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: #999;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.162),
+    rgba(0, 0, 0, 0.162)), url(images/body.png) !important;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#container{
+	background-image: repeating-conic-gradient(rgba(169, 75, 152, 0.788) 10%, rgba(205, 180, 159, 0.486) 20%);
+	
+}
+#myCanvas{
+	/*style the canvas*/
+	border: 1px solid #076486ef;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.262),
+    rgba(0, 0, 0, 0.262)), url("images/canvasback.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+}
+
+#showMax{
+	background:linear-gradient(to right, rgba(0, 136, 255, 0.931),
+    rgba(205, 134, 63, 0.946));
+	color: #fff;
+}
+
+#showMin{
+	background:linear-gradient(to right, rgba(205, 134, 63, 0.946),
+    rgba(0, 136, 255, 0.931));
+	color: #fff;
+	
+	
+}
+
+/*#showAvg{
+	background-color:#81E0FF;
+}*/
+
+
+@media only screen  and (min-width: 1000px) {/*for screens at least 960, in other words large*/
+#container {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+	#showMax,#showMin{
+		display:inline-block;
+		width:40%;
+		text-align: center;
+		font-size: 18px;
+		padding:10px;
+		margin:4.5%;
+		border-radius: 10px;
+		
+	}	
+	
+}
+
+@media only screen  and (max-width: 999px) {
+/*any viewport smaller than 1000*/
+#container {
+width: 99.5%;/*be as wide as the screen*/	
+	background-color: #FFF;
+	padding-bottom: 1%;
+}
+
+	#showMax,#showMin,#showAvg{
+		display:block;
+		width:98%;
+		text-align: center;
+		font-size: 3vw;
+		padding:1%;
+		margin:1%;
+		border-radius: 10px;
+		
+	}		
+	
+}/*end media query*/

@@ -1,0 +1,128 @@
+* { /*reset, all the selectors!*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*borders go on the inside, instead of outside*/
+  
+  }
+
+  body {
+    width: 100vw;
+    height: 50vw;
+    background-image: url(images/ballons.png), url(images/gift.png), url(images/place.jpg);
+    background-position: 20px -90px, 30px 80px, 0px 0px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    animation: animateBackground 20s linear infinite;
+    -ms-animation: animateBackground 20s linear infinite;
+    -moz-animation: animateBackground 50s linear infinite;
+    -webkit-animation: animateBackground 20s linear infinite;
+    overflow: hidden;
+  }
+
+  /*******************************Background Imamation**************************/
+  @keyframes animateBackground {
+    0% { background-position: 50px 100px, 2010px 1000px, 0 0; 
+         background-size: 300px, 25px, auto 100%; }
+    25% { background-position: 300px -90px, 30px 20px, 25% 0;
+          background-size: 300px, 175px, auto 100%;}
+    30% { background-position: 700px -520px, 30px 20px, 30% 0;
+          background-size: 0px, 251px, auto 100%;}
+    35% { background-position: -100px -200px, 30px 20px, 35% 0;
+          background-size: 0px, 251px, auto 100%; }
+    45% { background-position: 30px 50px, 90px 20px, 45% 0; 
+          background-size: 300px, 251px, auto 100%;}
+    100% { background-position: 500px 20px, 1900px 20px, 100% 0;
+          background-size: 300px, 251px, auto 100%;}
+  }
+  
+  
+  @-webkit-keyframes animateBackground {
+    0% { background-position: 20px 20px, 30px 80px, 0 0; 
+         background-size: 300px, 25px, auto 100%; }
+    25% { background-position: 300px -90px, 30px 20px, 25% 0;
+          background-size: 300px, 175px, auto 100%;}
+    30% { background-position: 700px -520px, 30px 20px, 30% 0;
+          background-size: 0px, 251px, auto 100%;}
+    35% { background-position: -100px -200px, 30px 20px, 35% 0;
+          background-size: 0px, 251px, auto 100%; }
+    45% { background-position: 30px 20px, 90px 20px, 45% 0; 
+          background-size: 300px, 251px, auto 100%;}
+    100% { background-position: 500px 20px, 900px 20px, 100% 0;
+          background-size: 300px, 251px, auto 100%;}
+  }
+  
+  @-moz-keyframes animateBackground {
+    0% { background-position: 20px 20px, 30px 80px, 0 0; 
+         background-size: 300px, 25px, auto 100%; }
+    25% { background-position: 300px -90px, 30px 20px, 25% 0;
+          background-size: 300px, 175px, auto 100%;}
+    30% { background-position: 700px -520px, 30px 20px, 30% 0;
+          background-size: 0px, 251px, auto 100%;}
+    35% { background-position: -100px -200px, 30px 20px, 35% 0;
+          background-size: 0px, 251px, auto 100%; }
+    45% { background-position: 30px 20px, 90px 20px, 45% 0; 
+          background-size: 300px, 251px, auto 100%;}
+    100% { background-position: 500px 20px, 900px 20px, 100% 0;
+          background-size: 300px, 251px, auto 100%;}
+  }
+  
+  @-ms-keyframes animateBackground {
+    0% { background-position: 20px 20px, 30px 80px, 0 0; 
+         background-size: 300px, 25px, auto 100%; }
+    25% { background-position: 300px -90px, 30px 20px, 25% 0;
+          background-size: 300px, 175px, auto 100%;}
+    30% { background-position: 700px -520px, 30px 20px, 30% 0;
+          background-size: 0px, 251px, auto 100%;}
+    35% { background-position: -100px -200px, 30px 20px, 35% 0;
+          background-size: 0px, 251px, auto 100%; }
+    45% { background-position: 30px 20px, 90px 20px, 45% 0; 
+          background-size: 300px, 251px, auto 100%;}
+    100% { background-position: 500px 20px, 900px 20px, 100% 0;
+          background-size: 300px, 251px, auto 100%;}
+  }
+/*********************************h1, button, and footer style******************************/
+  h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+#btn{
+  display:inline-block;
+  padding:8px 30px;
+  background:#fff;
+  color:#094b65;
+  font-size:1.2em;
+  font-weight:500;
+  letter-spacing:2px;
+  border-radius:40px;
+  transform:translateY(100px);
+ margin-left: 45%;
+ margin-top: 20%;
+ 
+}
+#btn:hover{
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgba(17, 9, 17, 0.253);
+  text-align:justify;
+  position: fixed;
+  height: 65px;
+  width: 99.9%;
+  bottom: 0;
+  left: 0;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Train One', cursive;
+  font-style: italic;
+}
+  

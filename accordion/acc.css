@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	padding: 0px;
+	margin: 0px;
+
+	box-sizing: border-box;
+}
+
+.myclear{
+	clear:both;
+}
+
+body {
+	background-color: #000;
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 100%;
+}
+#container {
+	width: 100vw;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgba(231, 196, 55, 0.412);
+	min-height: 100vh;
+}
+header {
+	min-height: 90px;
+	background-color: silver;
+	background-image: url(images/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header h1 {
+	padding: 15px;
+}
+#accordion {
+	width: 100%;
+	margin: 0 auto;
+}
+#accordion p {
+	margin-bottom: 10px;
+}
+.tab {
+	padding:10px 10px 10px 50px;
+	background-color: rgba(30, 219, 96, 0.613);
+	border: solid 1px silver;
+	color: yellow;
+	cursor: pointer;
+	font-size:16px;
+	font-weight: 300;
+	height: 40px;
+	position:relative;
+	transition: all 0.5s;
+}
+
+.currentTab {
+	background-color:orange;
+	color:#fff;
+	font-weight: 700;
+}
+
+.tab img {
+	width:20px;
+	height: 20px;
+	position:absolute;
+	top: 10px;
+	left:10px;
+	transform: rotate(0deg);
+	transition: all 0.5s;
+}
+
+.currentTab img{
+	transform: rotate(90deg);
+}
+
+
+
+.panel {
+	padding: 10px;
+	background-color: #dc822f;
+	border: solid 1px #fff;
+	
+}
+
+#content2, #content3, #content4, #content5 {
+	display: none;
+}
+
+img.single{
+	display:block;
+	float:left;
+	width:50%;
+	margin:1%;
+	border:10px solid #fff;
+}
+
+
+
+
+img.gal{
+	display:block;
+	float:left;
+	width:23%;
+	margin:1%;
+	border:10px solid #fff;
+}
+
+img.palace{
+	display:block;
+	float:left;
+	width:30%;
+	margin:1%;
+	border:10px solid #fff;
+}
+
+@media only screen and (max-width: 960px){
+	img.gal{
+	width:48%;
+	margin:1%;
+}
+
+		
+}
+
+@media only screen and (max-width: 640px){
+	img.gal, img.single, img.palace{
+		float:none;
+	width:98%;
+	margin:1%;
+}
+
+	
+	
+
+	
+	
+}

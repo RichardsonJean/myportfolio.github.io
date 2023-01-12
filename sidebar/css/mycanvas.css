@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+#canvas_container{
+	
+	background-color: #FFF;
+	background-image: repeating-conic-gradient(rgba(255, 0, 0, 0.502) 10%,
+	 rgba(0, 0, 255, 0.533) 20%);
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+#myCanvas{
+	/*style the canvas*/
+	border: 1px solid #076486ef;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.762),
+    rgba(0, 0, 0, 0.762)), url("../sidebar_images/mycanvasback.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+}
+
+#showMax{
+	background:linear-gradient(to right, rgba(0, 136, 255, 0.931),
+    rgba(205, 134, 63, 0.946));
+	color: #fff;
+	text-transform:uppercase;
+}
+
+#showMin{
+	background:linear-gradient(to right, rgba(205, 134, 63, 0.946),
+    rgba(0, 136, 255, 0.931));
+	color: #fff;
+	text-transform:uppercase;
+	
+	
+}
+
+#showAvg{
+	background-color:#81E0FF;
+	background:linear-gradient(to right, rgba(205, 134, 63, 0.946),
+    rgba(0, 136, 255, 0.931), rgba(129, 224, 255, 0.834));
+	color: #fff;
+	text-transform:uppercase;
+}
+/*Start slider style*/
+.banner1, .banner2, .banner3, .banner4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: black;
+	height: 70vh;
+	margin-top: 50px;
+	transform: translateX(-10vw);
+	width: 30%;
+	margin-bottom: 50px;
+	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.762),
+    rgba(0, 0, 0, 0.762)), url("../sidebar_images/flag.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: fixed;
+	
+    overflow: hidden;
+}
+.banner1 img, .banner2 img, .banner3 img, .banner4 img{
+	
+	width: 400px !important;
+    position: fixed;
+    animation: zoom-in 15s linear infinite;
+}
+
+
+@keyframes zoom-in{
+    100%{
+		transform: scale(1.2);
+    }
+
+}
+
+.text-box{
+    width: 450px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 15s linear infinite;
+    transform: translateY(100px);
+}
+
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text-box p::first-letter, .text-box h1::first-letter {
+	font-size: 30px;
+	font-family: 'Bungee Spice', cursive;
+	font-weight: 300;
+	background-image: url("../sidebar_images/neg.jpg");
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+.text-box h1{
+    margin-bottom: 30px;
+
+}
+.text-box p{
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 70px;
+}
+.text-box span{
+    background-color: aqua;
+	font-family: 'Roboto', sans-serif;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+.text-box p #myspan{
+	font-style: italic;
+	color: aqua;
+	background-color: transparent;
+	margin-top: 25px;
+	width: 400px;
+}
+
+.banner1{
+    animation: slide1 15s linear infinite;
+}
+
+.banner2{
+    animation: slide2 15s linear infinite;
+	
+}
+
+.banner3{
+    animation: slide3 15s linear infinite;
+	
+}
+
+.banner4{
+    animation: slide4 15s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 3s;
+}
+.text-box3{
+    animation-delay: 6s;
+}
+.text-box4{
+    animation-delay: 9s;
+}
+
+.banner1:hover, .banner2:hover, .banner3:hover, .banner4:hover{
+	cursor: pointer;
+	background-image: repeating-radial-gradient(rgba(7, 6, 6, 0.569), rgba(6, 6, 8, 0.831) 10%,
+	 rgba(255, 255, 255, 0.301) 15%);
+	
+}
+
+/*Start slider style*/
+footer{
+	margin-top: 550px;
+}
+
+@media only screen  and (min-width: 1000px) {/*for screens at least 960, in other words large*/
+	#canvas_container {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+	#showMax,#showMin, #showAvg{
+		display:inline-block;
+		width:26%;
+		text-align: center;
+		font-size: 18px;
+		padding:10px;
+		margin:3%;
+		border-radius: 10px;
+		
+	}	
+
+	.text-box{
+		top: 100px;
+		left: 20px;
+		color: #fff;
+		width: 50% !important;
+}
+
+.banner1, .banner2, .banner3, .banner4{
+	display: inline-block !important;
+	width: 1000px;
+	transform: translateX(7%);
+	background-position: 110% center;
+	z-index: -10;
+}
+.banner1 img{
+	width: 35% !important;
+	margin-left: 60% !important;
+	margin-top: 50px;
+}
+.banner2 img{
+	width: 23% !important;
+	margin-left: 60% !important;
+	margin-top: 40px;
+}
+.banner3 img{
+	width: 25% !important;
+	margin-left: 55% !important;
+	margin-top: 40px;
+}
+.banner4 img{
+	width: 20% !important;
+	margin-left: 60% !important;
+	margin-top: 50px;
+}
+
+
+.banner1 .text-box h1{
+	margin-top: 20px !important;
+}
+.banner2 .text-box h1{
+	margin-top: 20px !important;
+
+}
+
+.banner4 .text-box h1{
+	margin-top: 20px !important;
+
+}
+footer{
+	margin-top: 75vh;
+}	
+	
+}
+
+@media only screen  and (max-width: 999px) {
+/*any viewport smaller than 1000*/
+#canvas_container {
+	width: 99.5%;/*be as wide as the screen*/	
+	background-color: #FFF;
+	padding-bottom: 1%;
+}
+
+	#showMax,#showMin,#showAvg{
+		display:block;
+		width:98%;
+		text-align: center;
+		font-size: 3vw;
+		padding:1%;
+		margin:1%;
+		border-radius: 10px;
+		
+	}
+
+	.text-box{
+			top: 250px;
+			left: 10vw;
+			right: 10vw;
+			color: #fff;
+			width: 90vw !important;
+	
+	}
+	
+	.banner1, .banner2, .banner3, .banner4{
+		display: inline-block !important;
+		width: 110vw;
+		min-height: 100vh !important;
+		background-position: 110% center;
+		margin-top: 10px;
+		z-index: -10;
+	}
+	.banner1 img{
+		width: 70vw !important;
+		margin-left: 20vw !important;
+		margin-top: 35px;
+	}
+	.banner2 img{
+		width: 30vw !important;
+		margin-left: 40vw !important;
+		margin-top: 30px;
+		
+	}
+	.banner3 img{
+		width: 30vw !important;
+		margin-left: 40vw !important;
+		margin-top: 30px;
+	}
+	.banner4 img{
+		width: 30vw !important;
+		margin-left: 35vw !important;
+		margin-top: 35px;
+	}
+
+	.banner1 .text-box h1{
+		margin-top: 20px !important;
+	}
+	.banner2 .text-box h1{
+		margin-top: 15px !important;
+	
+	}
+	
+	.banner4 .text-box h1{
+		margin-top: 15px !important;
+	
+	}
+	.text-box span{
+		background-color: transparent;
+	}
+	.text-box p{
+		font-size: 24px;
+		line-height: 20px;
+		margin-bottom: 55px !important;
+		margin-top: 5px !important;
+		
+		
+	}
+	footer {
+		
+		margin-top: 600px !important;
+	}
+	
+}/*end media query*/

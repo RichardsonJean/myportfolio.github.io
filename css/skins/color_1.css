@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --skin-color:#ae00ff /*#ec1839*/;
+    
+}

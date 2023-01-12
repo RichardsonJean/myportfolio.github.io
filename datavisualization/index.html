@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<xml>
+  <nasdaq>
+    <endOfYear year="2007" closing =" 3763" />
+    <endOfYear year="2008" closing ="2236" />
+    <endOfYear year="2009" closing ="3131" />
+    <endOfYear year="2010" closing ="3607" />
+    <endOfYear year="2011" closing ="3441" />
+    <endOfYear year="2012" closing ="3919" />
+    <endOfYear year="2013" closing ="5342" />
+    <endOfYear year="2014" closing ="6010" />
+    <endOfYear year="2015" closing ="6309" />
+    <endOfYear year="2016" closing ="6643" />
+    <endOfYear year="2017" closing ="8346" />
+    <endOfYear year="2018" closing ="7869" />
+    <endOfYear year="2019" closing ="10408" />
+    <endOfYear year="2020" closing ="14744" />
+    <endOfYear year="2021" closing ="16724" />
+  </nasdaq>
+</xml>
+<head>
+<meta charset="UTF-8">
+<title>Stockchart</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--link to CDN hosted lib-->
+
+<script src="mycombo.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<div id="container">
+  <canvas id="myCanvas" width="1000" height="600">
+	  Your browser does not support the HTML5 canvas tag. 
+	</canvas>
+  <div id="showMax">00</div>
+  <div id="showMin">00</div>
+  <!--<div id="showAvg">00</div>-->
+</div>
+</body>
+</html>

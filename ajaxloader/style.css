@@ -1,0 +1,687 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(0, 0, 0, 0.555);
+	font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight:200;
+	
+}
+
+
+
+
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background:url("images/video.jpg") no-repeat;
+	background-size: cover;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.stopfade {
+	opacity: 0.5;
+}
+
+#pbutton {
+	display: block;
+	width: 80%;
+	padding: .4vw;
+	border: none;
+	font-size: 1vw;
+	/*background: rgba(255,255,255,0.23);*/
+	color: #212C61;
+	background: linear-gradient(to right, #4B78A9 0%, #dc822f 100%);
+	
+
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: .3s background;
+	transition: .3s background;
+}
+
+#pbutton:hover {
+	color: #fff;
+	background: linear-gradient(to right, #dc822f 0%, #4B78A9 50%);
+	
+}
+
+.my_header {
+	position: fixed;
+	z-index: 999;
+	width: 23vw;
+	left: 2vw;
+	top: 2vh;
+	background-color: rgba(255,255,255,0);
+	padding: 2vw;
+	min-height: 96vh;
+	background-image: repeating-conic-gradient(rgba(75, 120, 169, 0.518) 10%, rgba(205, 180, 159, 0.486) 20%);
+	
+}
+
+.my_header h1 {
+	font-size: 5vw;
+	line-height: 1;
+	/*color: #CDB49F;*/
+	padding-bottom: 1vw;
+	cursor: pointer;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+	font-weight: 900;
+	
+	background-image: url("images/fitness3.jpg");
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+
+	animation: myh1 3s steps(6);
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 3px solid transparent;
+	width: 6ch;
+}
+@keyframes myh1{
+	0%{
+		width: 0ch;
+		
+	}
+	100%{
+		width: 6ch;
+		
+	}
+}
+
+
+
+nav ul {
+	list-style-type: none;
+	
+}
+
+.my_header nav ul li {
+	width: 100%;
+	display: block;
+	text-align: left;
+}
+
+.my_header nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5vw;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
+	font-weight:bold;
+	text-transform: uppercase;
+
+	background: linear-gradient(to right, #fff 0%, orange 50%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+.my_header nav ul li a:hover,
+.my_header h1:hover
+{
+	/*color: #FB7;*/
+
+	background-image: url("images/pull3.jpg");
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+.my_current{
+	/*color: #000 !important;*/
+
+	background-image: url("images/pull2.jpg") !important;
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+	
+	
+}
+
+
+#content {
+	position: absolute;
+	z-index: 1;
+	width: 71vw;
+	right: 2vw;
+	top: 2vh;
+	/*background: rgba(55,55,55,0.3);*/
+	background: linear-gradient(to right, rgba(75, 120, 169, 0.518)  0%, rgba(205, 180, 159, 0.486) 100%);
+	padding: 2vw;
+	min-height: 80vh;
+	border-radius: 10px;
+	
+}
+
+#content h2 {
+	font-size: 4vw;
+	line-height: 1;
+	color: #FFE787;
+	padding-bottom: 1vw;
+	text-transform: uppercase;
+	font-weight: 900;
+	
+	
+
+
+	background-image: url("images/pull2.jpg");
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+
+	animation: stp 4s steps(25);
+	width: 25ch;
+	white-space: nowrap;
+	
+	
+}
+@keyframes stp{
+	0%{
+		width: 0ch;
+		
+	}
+	100%{
+		width: 25ch;
+		
+	}
+}
+
+#content p {
+	font-size: 1.3vw;
+	line-height: 1.1;
+	/*color: #eee;*/
+	padding-bottom: 1vh;
+
+	background: linear-gradient(to right,rgba(0, 0, 0, 0.966) 50%, #000 50%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+	
+}
+
+#content img {
+	float: right;
+	margin: 0.5vw;
+	width: 20vw;
+	height: auto;
+	opacity: 0.9;
+	background-image: repeating-radial-gradient(rgba(181, 178, 181, 0.568), rgba(75, 120, 169, 0.526) 10%, rgba(22, 33, 43, 0.716) 15%, rgba(255, 166, 0, 0.708) 20%);
+}
+
+.mylink{
+	
+	line-height: 1.1;
+	color: transparent;
+	margin: 10% 39%;
+	transition: 4s;
+	position: relative;
+	font-size: 2rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	-webkit-text-stroke: 0.3vw transparent;
+	text-transform: uppercase;
+	margin: 10% 34%;
+    
+		
+}
+#content .mylink::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: lightblue;
+	-webkit-text-stroke: 0vw transparent;
+	border-right: 2px solid skyblue;
+	overflow: hidden;
+	animation: mylink 6s linear infinite;
+	-webkit-animation: mylink 6s linear infinite;
+
+}
+
+@keyframes mylink{
+	0%{
+		width: 0;
+	}
+	70%{
+		width: 100%;
+	}
+}
+#content .mylink:hover::before{
+	
+	border-right: 2px solid transparent;
+}
+.mylink:hover{
+	background: linear-gradient(to right, rgba(255, 0, 0, 0.648) 50%, rgba(0, 0, 255, 0.649) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+	
+	
+}
+#content .myul{
+	font-size: 1.3vw;
+	line-height: 1.1;
+	color: #fff;
+	padding-bottom: 1vh;
+	margin-left: 4%;
+
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.871) 50%, rgba(0, 0, 0, 0.86) 50%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+#content .myul li a{
+	
+	background: linear-gradient(to right, #16212B 50%, orange 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+	text-decoration: underline;
+	transition: 1s;
+}
+
+#content .myul li a:hover{
+	color: orange;
+	background: linear-gradient(to right, red 0%, blue 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+#content .myimg{
+	position: relative;
+	width: 60vw;
+	height: 30vw;
+	display: flex;
+	justify-content: center;
+	background: #000;
+	border-radius: 5px;
+	overflow: hidden;
+	left: 4vw;
+	right: 1vw;
+	margin-top: 2%;
+}
+
+#content .myimg img{
+	width: 60vw;
+	position: relative;
+	inset: 1;
+	z-index: 5;
+}
+#content .myimg::after{
+	content: "";
+	position: absolute;
+	background: #c0c0c0;
+	inset: 4px;
+}
+
+#content .myimg::before{
+	content: "";
+	position: absolute;
+	width: 60vw;
+	height: 30vw;
+	
+	background: linear-gradient(to right, #4B78A9 50%, orange 50%);/*#dc822f   #0d7527*/
+	
+	
+	animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+/******************circular Styles start*******************************/
+
+#icon-twitter, #icon-facebook, #icon-linkedin, #icon-instegram {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+#share, li.cr{
+	position: fixed;
+	bottom: 0.5vw;
+	right: 2vw;
+	transition: .5s all;
+	list-style: none;
+	
+}
+
+#share {
+	background-image: url("images/share.png");
+	z-index: 99;
+	outline: none;
+	border: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+
+}
+#icon-twitter {
+	background-image:url("images/twitter.png");
+	
+	
+}
+#icon-facebook {
+	background-image: url("images/facebook.png");
+	
+}
+#icon-linkedin {
+	background-image: url("images/linkedin.png");
+	
+}
+#icon-instegram {
+	background-image: url("images/instagram.png");
+	
+}
+#iconwrapper li {
+	opacity: 0;
+	
+}
+	
+
+
+#iconwrapper li.slideout {
+	opacity: 1;
+}
+li.slideout:nth-child(1) {
+	transform: translateY(-100px);
+	z-index: 1000;
+}
+li.slideout:nth-child(2) {
+	transform: translateY(-86px) translateX(-50px);
+	z-index: 1000;
+}
+li.slideout:nth-child(3) {
+	transform: translateY(-50px) translateX(-86px);
+	z-index: 1000;
+}
+li.slideout:nth-child(4) {
+	transform: translateX(-100px) ;
+	z-index: 1000;
+}
+
+/******************circular Styles end*******************************/
+
+
+@media only screen and (max-width: 959px) {
+
+body {
+	background:rgba(0, 0, 0, 0.37);
+}
+
+#bgvid,
+#pbutton {
+	display: none;
+}
+
+
+.my_header nav ul li a {
+	font-size: 1em;
+	
+}
+
+.my_header {
+	left: 1vw;
+	top: 1vw;
+	padding: 1vw;
+	
+	
+}
+
+#content {
+	background: url("images/video.jpg") no-repeat top center;
+	background-size: cover;
+	width: 73vw;
+	right: 1vw;
+	top: 1vw;
+	padding: 1vw;
+}
+
+#content h2 {
+	font-size: 1.8em;
+	line-height: 1.6;
+	margin-left: 5%;
+	animation: stp 4s steps(25);
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 3px solid transparent;
+	width: 22ch;
+	
+}
+
+#content p {
+	font-size: 1.5em;
+}
+#content p, #content .myul{
+	font-size: 1.5em;
+	line-height: 1;
+	padding-bottom: 5%;
+	margin-left: 5%;
+
+	
+}
+
+#content .mylink{
+	font-size: 2rem;
+	margin: 7% 6%;
+
+}
+
+#content img {
+	
+	width: 50%;
+	
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+	
+.my_header nav ul li a {
+	font-size: 2em;
+	
+}
+
+.my_header {
+	
+	background-image: repeating-linear-gradient(rgba(255, 0, 0, 0.651), rgba(75, 120, 169, 0.518) 10%, rgba(205, 180, 159, 0.486) 10%);
+	background-size: contain;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	padding: 0.5vw;
+	min-height: 80px;
+}
+
+.my_header h1 {
+	font-size: 2.5em;
+	line-height: 1.3;
+	background-image: url("images/squat3.jpg");
+}
+
+.my_header nav ul li {
+	width: 33%;
+	float: left;
+	text-align: center;
+	
+}
+
+.my_header nav ul li a {
+	padding: 5px;
+	font-size: 100%;
+}
+
+.my_header nav ul li a:hover,
+.my_header h1:hover
+{
+	
+
+	background-image: url("images/push2.jpg");
+	
+	
+}
+
+#content {
+	width: 100vw;
+	right: 0vw;
+	top: 106px;
+	padding: 2%
+}
+#content h2{
+	margin-top: 3%;
+	font-size: 180%;
+	margin-left: 7%;
+}
+
+#content p, #content .myul li {
+	font-size: 120%;
+	line-height: 1;
+	padding-bottom: 5%;
+	margin-left: 5%;
+
+	
+}
+
+#content .mylink{
+	font-size: 1.5rem;
+	margin-left: 10%;
+
+}
+
+#content img {
+	float: none;
+	margin: 0.5% 7%;
+	width: 86%;
+	height: auto;
+}
+#content .myul{
+	font-size: 120%;
+	line-height: 1;
+	padding-bottom: 5%;
+	margin-left: 10%;
+}
+
+#content .myimg{
+	position: relative;
+	width: 80vw;
+	height: 50vw;
+	margin-left: 5%;
+}
+#content .myimg img{
+	width: 100%;
+	margin: 1%;
+	border: 3px solid silver;
+	
+	
+}
+#content .myimg::before{
+	width: 100vw;
+    height: 50vw;
+
+}
+
+#share, li.cr{
+	
+	bottom: 55vw;
+	
+	
+	
+}
+	
+	
+
+}
+
+

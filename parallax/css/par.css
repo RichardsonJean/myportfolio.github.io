@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik+Moonrocks&family=Train+One&display=swap');
+/* CSS Document */
+/*CSS rules to specify families
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Train One', cursive;
+*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+header { /*make sure anyhing in the header transitions*/
+	transition: all 0.3s;
+}
+.header_big { /*header when big*/
+	height: 165px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;/*above averything*/
+	width: 98.7vw; /*100% of viewport*/
+	background-color: rgba(28, 70, 184, 0.8);
+	text-align: center;
+	padding-top: 35px;
+}
+.header_small {/*changes when small*/
+	height: 65px;
+	background-color:  #41c1e8e1;
+	padding-top: 7px;
+}
+nav ul {
+	list-style-type: none;
+}
+.header_big nav ul li {
+	width: 18.5vw;
+	display: inline-block; /*behave like boxes- side by side.*/
+	text-align: center;
+}
+.header_small nav ul li { /*lines when small*/
+	width: auto;
+}
+.header_big nav ul li a {
+	font-family: "Arial Black", Arial;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 35px;
+	transition: all 1s;
+	text-transform: uppercase;
+}
+
+.header_small nav ul li a {/*links in header small*/
+	font-size: 18px;
+	background: linear-gradient(to right,#dc822f 0%,#0d7527 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+.header_small nav ul li a:hover {
+	background: linear-gradient(to right,blue 0%,red 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+
+.header_big nav ul li a:hover { /*links when hovered*/
+	background: linear-gradient(to right,green 0%,#e30606 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+#page {
+	width: 98.7vw;
+	position: relative;/*so its is a parent to positioned children, and to move it down*/
+	top: 165px;
+	background-color: #fff;
+}
+/*#show { /*the little field top left,only while developing, for showing js values/
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: green;
+	color: #fff;
+	z-index: 9999;
+}*/
+.all_parallax { /*things mutual to all the prallax panels, on large screens*/
+	height: 600px;
+	background-position: center center;/*in case image bigger than parralax*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;/*great for desktop, not for mobile*/
+	background-size: cover;
+	position: relative;
+}
+.all_parallax h1 { /*any h1 inside any parralax*/
+	font-family: 'Rubik Moonrocks', cursive;
+	
+	position: absolute; /*to its parent, all parallax*/
+	top: 50%;
+	left: 50%;/*in the center of parent*/
+	transform: translate(-50%, -50%);
+	/*color:  #1256b6;/*rgba(255, 255, 255, 0.8)*/
+	font-size: 75px;
+	text-align: center;
+	line-height: 0.9;/*make sure the h1 is not taller than the font*/
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.164) rgba(26, 20, 20, 0.182);
+     
+	background-image: url(../images/flag.jpg);
+	color: transparent;
+	background-size: 100% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+/*things unique to each panel*/
+.parallax-1 {
+	background-image: url(../images/labadee_2000.jpg);
+}
+.parallax-2 {
+	background-image: url(../images/cruise_2000.jpg);
+}
+.parallax-3 {
+	background-image: url(../images/beach_2000.jpg);
+}
+
+.parallax-4 {
+	background-image: url(../images/fun_2000.jpg);
+}
+.parallax-5 {
+	background-image: url(../images/resort_2000.jpg);
+}
+
+.all_content {/*things mutual to all the prallax panels content, on large screens*/
+	width: 960px;/*be 960 px on large screens*/
+	max-width: 100vw;/*unless the viewport is narrower*/
+	margin: 0 auto;
+	padding: 15px;
+}
+.all_content h2 { /*all the  h2's in  all contents */
+	margin-bottom: 20px;
+	font-family: 'Train One', cursive;
+	font-size: 30px;
+	/*color: #dc822f;*/
+	background: linear-gradient(to right,#41c1e8e1 0%,#dc822f 100%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+}
+.all_content p { /*all the  p's in  all contents */
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	/*color: #777;*/
+	line-height: 1.5;
+
+	background: linear-gradient(to right,rgba(29, 5, 5, 0.982) 0%,#1a0f05 100%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
+	
+}
+#toTop {/*the icon that will scroll back to top*/
+	position: fixed;
+	z-index: 1000;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/scrollUp.png);
+	background-size: 100% 100%;
+	cursor: pointer;/*to change curs0r when hover.*/
+}
+
+/*media query*/
+@media only screen and (max-width: 959px){
+/*if viewport any narrower than 960 here is whats going to change*/
+.header_big {
+	height: 90px;/*make header shorter*/
+}
+.header_small {
+	height: 65px;/*make header shorter*/
+}
+.header_big nav ul li {
+	width: 18vw;/*each li about a third*/
+}
+.header_big nav ul li a {
+	font-size: 14px;/*make sure text big enough to click on*/
+	padding: 4px;
+}
+#page {
+	top: 90px;/*adgust to the new height of header*/
+	
+}
+.all_parallax {
+	height: 65px;
+	background-attachment: scroll;/*for phones- regular bg scrolling*/
+}
+.all_parallax h1 {
+	font-size: 190%;/*h1 get a little bigger*/
+	text-shadow: 2px 2px 15px silver black;
+	
+	
+}
+.parallax-1 {
+	background-image: url(../images/labadee_900.jpg);
+}
+.parallax-2 {
+	background-image: url(../images/cruise_900.jpg);
+}
+.parallax-3 {
+	background-image: url(../images/beach_900.jpg);
+}
+
+.parallax-4 {
+	background-image: url(../images/fun_900.jpg);
+}
+.parallax-5 {
+	background-image: url(../images/resort_900.jpg);
+}
+/*smaller images for smaller screens*/
+	
+
+.content p {
+	font-size: 120%;/*make it readable!*/
+}
+#toTop {
+	width: 40px;
+	height: 40px;/*on small screens smaller icon*/
+}
+}/*end media query*/

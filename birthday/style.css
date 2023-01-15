@@ -7,7 +7,7 @@
 
   body {
     width: 100vw;
-    height: 50vw;
+    height: 100vh;
     background-image: url(images/ballons.png), url(images/gift.png), url(images/place.jpg);
     background-position: 20px -90px, 30px 80px, 0px 0px;
     background-repeat: no-repeat, no-repeat, repeat-x;
@@ -80,30 +80,39 @@
           background-size: 300px, 251px, auto 100%;}
   }
 /*********************************h1, button, and footer style******************************/
-  h1{
+ h1{
     text-align: center;
-    color: #fff;
-    margin-top: 10px;
+    color: rgb(81, 5, 24);
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
+}
+
+.mybtn{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
 }
 #btn{
   display:inline-block;
   padding:8px 30px;
   background:#fff;
-  color:#094b65;
+  color:rgb(81, 5, 24);
   font-size:1.2em;
   font-weight:500;
   letter-spacing:2px;
+  border: 2px solid #0e96eb;
   border-radius:40px;
-  transform:translateY(100px);
- margin-left: 45%;
- margin-top: 20%;
+ 
+ /*margin-left: 45%;
+ margin-top: 20%;*/
  
 }
 #btn:hover{
   cursor: pointer;
-  background-color: #000;
+  background-color: rgba(110, 222, 12, 0.5);
   color: #fff;
 }
 

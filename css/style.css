@@ -89,7 +89,6 @@ ul{
 .container{
     max-width: 1100px;
     width: 100%;
-    /*background: red;*/
     margin: auto;
 }
 .sectionb.container{
@@ -100,7 +99,6 @@ ul{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
-    /*background: red;*/
 }
 .section-title h2{
     font-size: 40px;
@@ -169,48 +167,34 @@ ul{
     transition: all 0.3s ease;
 }
 .aside .logo{
+    display: none;
     position: absolute;
-    top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
+    top: 5px;
+    width: 75%;
+    max-width: 250px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid var(--skin-color);
+    background: rgba(192, 192, 192, 0.342);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+   
 }
-.aside .logo a{
-    color: var(--text-black-900);
-    font-weight: 700;
-    /*background: red;*/
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    position: relative;
-}
-.aside .logo a span{
-    font-family: 'Train One', cursive;
-    font-size: 40px;
-    color: var(--skin-color);
 
+.aside .logo img{
+    width: 80px;
+    border: 5px solid var(--skin-color);
+    border-radius: 50%;
 }
-.aside .logo a::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    bottom: 0;
-    left: 0;
+.aside .logo .links img{
+    width: 35px;
+    border-radius: 50%;
+    margin: 15px 2px;
+   background: var(--skin-color);
+}
 
-
-}
-.aside .logo a::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-    top: 0;
-    right: 0;
-}
 .aside .nav-toggler{
     height: 40px;
     width: 45px;
@@ -264,11 +248,10 @@ ul{
     left: 0;
 }
 .aside .nav{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .aside .nav li{
     margin-bottom: 20px;
-    /*background: red;*/
     display: block;
 }
 .aside .nav li a{
@@ -318,41 +301,40 @@ h3.my-profession{
     font-size: 20px;
     color: var(--text-black-700);
 }
-.home .home-img{
-    flex: 0 0 40%;
-    max-width: 40%;
-    /*background: red;*/
+
+.card{
+  
+    width: 50%;
+    max-width: 500px;
+    color: #fff;
     text-align: center;
-    position: relative;
+    padding: 50px 35px;
+    border: 1px solid var(--skin-color);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    margin-top: 20px;
+    
 }
-.home-img::after{
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+.card img{
+    width: 140px;
+    border: 5px solid var(--skin-color);
+    border-radius: 50%;
+}
 
+.card .links img{
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    transition: background 0.5s;
 }
-.home-img::before{
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    /*background: red;*/
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+.card .links img:hover{
+    background: #0173ff;
+}
 
-}
-.home .home-img img{
-    margin: auto;
-    border-radius: 5px;
-    height: 400px;
-}
 /*---------------About Style-----------------------*/
 .about .about-content{
     flex: 0 0 100%;
@@ -382,15 +364,11 @@ h3.my-profession{
 .about .about-content .personal-info{
     flex: 0 0 60%;
     max-width: 60%;
-   /* background-color: red;*/
-   /*margin-top: 5%;*/
-   
 
 }
 .about .about-content .personal-info .info-item{
     flex: 0 0 50%;
     max-width: 50%;
-   /*background-color: red;*/
 }
 .about .about-content .personal-info .info-item p, .myp{
     font-weight: 600;
@@ -410,7 +388,6 @@ h3.my-profession{
     
 }
 .about .about-content .personal-info .buttons .btn{
-    /*margin-right: 15px;*/
     margin-top: 10px;
     
 }
@@ -418,14 +395,12 @@ h3.my-profession{
 .about .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
-    /*background-color: green;*/
     margin-top: 2%;
 
 }
 .about .about-content .skills .skill-item{
     flex: 0 0 100%;
     max-width: 100%;
-    /*background-color: red;*/
    
 }
 .about .about-content .skills .skill-item h5{
@@ -467,11 +442,9 @@ h3.my-profession{
     max-width: 50%;
     margin-top: 30px;
     margin-bottom: 1%;
-    /*background-color: red;*/
+   
 }
-/*.about .about-content .experience{
-    background-color: rosybrown;
-}*/
+
 
 .about .about-content h3.title{
     font-size: 24px;
@@ -482,7 +455,6 @@ h3.my-profession{
 .about .about-content .timeline-box{
     flex: 0 0 100%;
     max-width: 100%;
-    /*background-color: red;*/
 }
 .about .about-content .timeline{
     background-color: var(--bg-black-100);
@@ -565,7 +537,6 @@ h3.my-profession{
     width: 60px;
     border-radius: 50%;
     display: block;
-    /*background-color: red;*/
     margin: 0 auto 30px;
     text-align: center;
     transition: all 0.3s ease;
@@ -670,12 +641,12 @@ h3.my-profession{
 .contact .contact-form .col-6{
     flex: 0 0 50%;
     max-width: 50%;
-    /*background: red;*/
+   
 }
 .contact .contact-form .col-12{
     flex: 0 0 100%;
     max-width: 100%;
-    /*background: red;*/
+   
 }
 .contact .contact-form .form-item{
     margin-bottom: 30px;
@@ -714,9 +685,7 @@ h3.my-profession{
     .aside.open{
         left: 0;
     }
-    /*.main-content{
-        padding-left: 0;
-    }*/
+   
     .aside .nav-toggler{
         display: flex;
         left: 30px;
@@ -724,6 +693,9 @@ h3.my-profession{
     .aside .nav-toggler.open{
         left: 300px;
     }
+
+    
+
     .section{
         left: 0;
     }
@@ -748,8 +720,16 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+
+    .card{
         display: none;
+    }
+
+    .aside .nav{
+        margin-top: 300px;
+    }
+    .aside .logo{
+        display: inline-block;
     }
 }
 

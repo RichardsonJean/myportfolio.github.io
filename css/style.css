@@ -733,6 +733,11 @@ h3.my-profession{
     .aside .logo{
         display: inline-block;
     }
+    .about .about-content .personal-info .buttons .btn{
+        margin-top: 5px !important;
+       
+        
+    }
 }
 
 @media (max-width:767px){

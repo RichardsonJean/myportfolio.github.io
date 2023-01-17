@@ -285,12 +285,14 @@ ul#mylist li{
     
     
     #myh1{
-        font-size: 40px;
+        font-size: 3rem;
     }
     .column1 p{
         font-size: 17px;
     }
-    
+    body{
+        width: 100vw;
+    }
     
    
 }
@@ -531,7 +533,7 @@ ul#mylist li{
 }
 
 .newsletter h3{
-    font-size: 3rem;
+    font-size: 2rem;
     color:var(--black);
 }
 
@@ -542,8 +544,8 @@ ul#mylist li{
 }
 
 .newsletter form{
-    max-width: 60rem;
-    height:5rem;
+    max-width: 40rem;
+    height:3rem;
     background:#fff;
     border-radius: 5rem;
     overflow:hidden;
@@ -557,14 +559,14 @@ ul#mylist li{
     width:100%;
     padding:0 2rem;
     font-size: 1.6rem;
-    color:var(--black);
+    color:var(--black) ;
     text-transform: none;
-    background-color: rgba(128, 128, 128, 0.373);
+    background-color: rgba(0, 0, 0, 0.558);
 }
 
 .newsletter form input[type="submit"]{
     height: 100%;
-    width:17rem;
+    width:10rem;
     font-size: 1.7rem;
     color:var(--black);
     background: var(--light-yellow);
@@ -579,7 +581,7 @@ ul#mylist li{
  .heading{
     padding-bottom: 2rem;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3rem;
     color:var(--black);
 }
 
@@ -597,6 +599,9 @@ ul#mylist li{
     background: var(--light-yellow);
     z-index: -1;
     clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+.reviews h4{
+    font-size: 2rem !important;
 }
 
 

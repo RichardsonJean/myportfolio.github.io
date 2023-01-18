@@ -522,6 +522,7 @@ body {
 
 #content {
 	background: url("images/video.jpg") no-repeat top center;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.525) 50%, rgba(0, 0, 0, 0.542) 50%);
 	background-size: cover;
 	width: 73vw;
 	right: 1vw;
@@ -611,15 +612,6 @@ body {
 	font-size: 100%;
 }
 
-.my_header nav ul li a:hover,
-.my_header h1:hover
-{
-	
-
-	background-image: url("images/push2.jpg");
-	
-	
-}
 
 #content {
 	width: 100vw;

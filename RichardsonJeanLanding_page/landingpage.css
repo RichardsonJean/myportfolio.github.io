@@ -238,10 +238,15 @@ nav .menubtn{
 }
 
 .column2{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.column2 img{
+    width: 90vw;
+}
+
 
 #myp{
     text-align: center;
@@ -299,10 +304,6 @@ ul#mylist li{
     }
     body{
         width: 100vw;
-    }
-    .column2 img{
-        width: 90vw;
-       
     }
     
    

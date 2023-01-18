@@ -508,7 +508,7 @@ footer article {
 	width: 200px !important;
 }
 footer{
-	margin-top: 560px !important;
+	margin-top: 60px !important;
 }
 }
 
@@ -564,6 +564,7 @@ footer{
 }
 footer {
 	padding: 20px 0 60px 0;
+	
 }
 footer h2 {
 	font-size: 20px;

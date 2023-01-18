@@ -44,16 +44,17 @@
 	text-transform:uppercase;
 }
 /*Start slider style*/
-.banner1, .banner2, .banner3, .banner4{
-	display: flex;
-	justify-content: center;
+.mydivcentered{
+	display:inline-block;
 	align-items: center;
-    background-color: black;
-	height: 70vh;
-	margin-top: 50px;
-	transform: translateX(-10vw);
-	width: 30%;
-	margin-bottom: 50px;
+	justify-content: center;
+	width: 100%;
+}
+
+.banner1, .banner2, .banner3, .banner4{
+	
+	width: 100%;
+	height: 80vh;
 	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.762),
     rgba(0, 0, 0, 0.762)), url("../sidebar_images/flag.jpg");
 	background-position: center center;
@@ -69,6 +70,28 @@
 	width: 400px !important;
     position: fixed;
     animation: zoom-in 15s linear infinite;
+	z-index: -10;
+}
+
+.banner1 img{
+	width: 30% !important;
+	margin-left: 25% !important;
+	margin-top: 50px;
+}
+.banner2 img{
+	width: 20% !important;
+	margin-left: 30% !important;
+	margin-top: 55px;
+}
+.banner3 img{
+	width: 18% !important;
+	margin-left: 30% !important;
+	margin-top: 40px;
+}
+.banner4 img{
+	width: 20% !important;
+	margin-left: 30% !important;
+	margin-top: 50px;
 }
 
 
@@ -254,7 +277,7 @@
 
 /*Start slider style*/
 footer{
-	margin-top: 550px;
+	margin-top: 40%;
 }
 
 @media only screen  and (min-width: 1000px) {/*for screens at least 960, in other words large*/
@@ -283,27 +306,20 @@ footer{
 		width: 50% !important;
 }
 
-.banner1, .banner2, .banner3, .banner4{
-	display: inline-block !important;
-	width: 100vw;
-	transform: translateX(7%);
-	background-position: 110% center;
-	z-index: -10;
-	
-}
+
 .banner1 img{
-	width: 35% !important;
-	margin-left: 60% !important;
+	width: 30% !important;
+	margin-left: 50% !important;
 	margin-top: 50px;
 }
 .banner2 img{
-	width: 23% !important;
+	width: 20% !important;
 	margin-left: 60% !important;
-	margin-top: 40px;
+	margin-top: 55px;
 }
 .banner3 img{
-	width: 25% !important;
-	margin-left: 55% !important;
+	width: 18% !important;
+	margin-left: 60% !important;
 	margin-top: 40px;
 }
 .banner4 img{
@@ -325,9 +341,7 @@ footer{
 	margin-top: 20px !important;
 
 }
-footer{
-	margin-top: 75vh;
-}	
+	
 	
 }
 
@@ -351,9 +365,9 @@ footer{
 	}
 
 	.text-box{
-			top: 250px;
-			left: 10vw;
-			right: 10vw;
+			top: 300px;
+			left: 2vw;
+			right: 5vw;
 			color: #fff;
 			width: 90vw !important;
 	
@@ -362,13 +376,10 @@ footer{
 		font-size: 15px !important;
 	}
 	
+	
 	.banner1, .banner2, .banner3, .banner4{
-		display: inline-block !important;
-		width: 110vw;
-		min-height: 100vh !important;
-		background-position: 110% center;
-		margin-top: 10px;
-		z-index: -10;
+		width: 100vw !important;
+		height: 90vh;
 	}
 	.banner1 img{
 		width: 70vw !important;
@@ -412,12 +423,12 @@ footer{
 		line-height: 20px;
 		margin-bottom: 55px !important;
 		margin-top: 5px !important;
-		
-		
+			
 	}
+	
 	footer {
 		
-		margin-top: 600px !important;
+		margin-top: 800px !important;
 	}
 	
 }/*end media query*/

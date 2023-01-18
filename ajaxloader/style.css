@@ -542,7 +542,7 @@ body {
 }
 
 #content p {
-	font-size: 1.5em;
+	font-size: 2em;
 	background: linear-gradient(to right, #fff 50%, #fff 50%);/*#dc822f   #0d7527*/
 	background-clip: text;
 	-webkit-background-clip: text;

@@ -236,6 +236,13 @@ nav .menubtn{
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+
+.column2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #myp{
     text-align: center;
     margin-top: 2% ;
@@ -292,6 +299,10 @@ ul#mylist li{
     }
     body{
         width: 100vw;
+    }
+    .column2 img{
+        width: 90vw;
+       
     }
     
    
@@ -744,14 +755,6 @@ ul#mylist li{
 	{
 		font-size:28px;
 	}
-    .column2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .column2 img{
-        width: 90vw;
-       
-    }
+    
 	
  }

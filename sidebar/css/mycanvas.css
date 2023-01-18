@@ -289,6 +289,7 @@ footer{
 	transform: translateX(7%);
 	background-position: 110% center;
 	z-index: -10;
+	
 }
 .banner1 img{
 	width: 35% !important;
@@ -356,6 +357,9 @@ footer{
 			color: #fff;
 			width: 90vw !important;
 	
+	}
+	.text-box p{
+		font-size: 15px !important;
 	}
 	
 	.banner1, .banner2, .banner3, .banner4{

@@ -543,6 +543,14 @@ body {
 
 #content p {
 	font-size: 1.5em;
+	background: linear-gradient(to right, #fff 50%, #fff 50%);/*#dc822f   #0d7527*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	-ms-background-clip: text;
+	 -moz-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	 -ms-text-fill-color: transparent;
+	-moz-background-clip: transparent;
 }
 #content p, #content .myul{
 	font-size: 1.5em;

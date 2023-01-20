@@ -270,8 +270,8 @@
 
 .banner1:hover, .banner2:hover, .banner3:hover, .banner4:hover{
 	cursor: pointer;
-	background-image: repeating-radial-gradient(rgba(7, 6, 6, 0.569), rgba(6, 6, 8, 0.831) 10%,
-	 rgba(255, 255, 255, 0.301) 15%);
+	background: linear-gradient(rgba(7, 6, 6, 1)50%, rgba(255, 0, 0, 1));
+	 ;
 	
 }
 

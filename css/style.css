@@ -240,7 +240,7 @@ transform: translate3d(0px, 0, 0);
 	transform: rotate(0deg);
 }
 .sb_showing .menu-trigger {
-	right: 340px;
+	right: 310px;
 	transform: rotate(180deg);
 }
 /*NAV styles*/
@@ -971,11 +971,16 @@ h3.my-profession{
     
 
     .sb_showing .menu-trigger {
-        right: 380px;
+        right: 360px;
     }
     
     .mymargin{
         right: 300px;
+    }
+
+    .style-switcher{
+        top: 2px !important;
+        left: 50px !important;
     }
 
     

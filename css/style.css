@@ -173,7 +173,7 @@ main-content{
 /*moving parts********************************************************************************/
 .sidebar {
     background: var(--bg-black-100);
-	width: 300px;
+	width: 500px;
 	height: 100vh;
 	position: fixed;
 	top: 0px;
@@ -194,7 +194,7 @@ main-content{
 
 }
 .sb_hidden .sidebar {
-	transform: translate3d(300px, 0, 0);
+	transform: translate3d(500px, 0, 0);
 }
 .sb_showing .sidebar {
 transform: translate3d(0px, 0, 0);
@@ -215,7 +215,7 @@ transform: translate3d(0px, 0, 0);
 	transform: translate3d(0px, 0, 0);
 }
 .sb_showing .main-content {
-	transform: translate3d(-300px, 0, 0) ;
+	transform: translate3d(-400px, 0, 0) ;
 }
 /*the menu button itself*/
 .menu-trigger {
@@ -283,8 +283,8 @@ transform: translate3d(0px, 0, 0);
     display: none;
     position: absolute;
     top: 5px;
-    left: 50px;
-    width: 330px;
+    right: 30px;
+    width: 320px;
     max-width: 100%;
     color: #fff;
     text-align: center;
@@ -294,6 +294,7 @@ transform: translate3d(0px, 0, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
+    z-index: 1000;
    
    
 }
@@ -304,7 +305,7 @@ transform: translate3d(0px, 0, 0);
     border-radius: 50%;
 }
 .sidebar .logo .links img{
-    width: 35px;
+    width: 30px;
     border-radius: 50%;
     margin: 15px 2px;
    background: var(--skin-color);
@@ -400,6 +401,8 @@ transform: translate3d(0px, 0, 0);
 }*/
 .sidebar .nav{
     margin-top: 20px;
+    
+   
 }
 .sidebar .nav li{
     margin-bottom: 20px;
@@ -890,11 +893,9 @@ h3.my-profession{
     /*.main-content{
         padding-left: 0;
     }*/
-    .sidebar{
-        width: 400px;
-        left: -40px;
-        perspective: 200px;
-    }
+    
+   
+    
    
    
     /*.aside .nav-toggler{
@@ -945,23 +946,31 @@ h3.my-profession{
     .card{
         display: none;
     }
-    .logo{
-        display: block;
+    .sidebar{
+       
+        width: 400px;
+        right: 0px;
+        perspective: 200px;
+        margin-left: 50px;
     }
 
     .sidebar .nav{
-        margin-top: 300px;
+        margin-top: 550px;
+        margin-left: -200px;
+        
     }
     .sidebar .logo{
         display: inline-block;
+       
     }
+    
 
     .sb_showing .menu-trigger {
-        left: 350px;
+        right: 380px;
     }
     
     .mymargin{
-        left: 300px;
+        right: 300px;
     }
 
     
@@ -980,8 +989,7 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .sb_showing .menu-trigger {
-        left: 360px;
-    }
+    
+    
 }
 

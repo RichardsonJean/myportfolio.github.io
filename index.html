@@ -14,7 +14,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script src="js/circular.js"></script>
     <!--Style Switcher------->
-    <link rel="stylesheet" href="css/skins/color_1.css" class="alternate-style" 
+   <!-- <link rel="stylesheet" href="css/skins/color_1.css" class="alternate-style" 
     title="color_1" disabled>
     <link rel="stylesheet" href="css/skins/color_2.css" class="alternate-style" 
     title="color_2" disabled>
@@ -23,34 +23,41 @@
     <link rel="stylesheet" href="css/skins/color_4.css" class="alternate-style" 
     title="color_4" disabled>
     <link rel="stylesheet" href="css/skins/color_5.css" class="alternate-style" 
-    title="color_5" disabled>
+    title="color_5" disabled>-->
     <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
   <!-----------------------------Start Main container------------------------------>
-  <div class="main-container">
+  <div class="main-container sb_hidden " id="mega-wrapper">
+    <div class="menu-trigger" ></div>
       <!-------------------------Start Aside-------------->
-      <div class="aside">
+      <div class=" sidebar" > <!--id="sidebar"-->
+           
           <div class="logo">
-            
+             <!--<a href="#"><span>A</span>tlas</a>-->
              <img src="images/pic1.jpg" alt="My Picture"> 
              <div class="links">
-                <a href="https://www.linkedin.com/in/richardson-jean-70335a136/  "><img src="icons/linkedin.png" alt="My Picture"></a>
-                <a href="https://github.com/RichardsonJean/"><img src="icons/githubsmall.png" alt="My Picture"></a>
-                <a href="https://www.instagram.com/richardson.jean.52/"><img src="icons/instagram.png" alt="My Picture"></a>
+                <a href="https://www.linkedin.com/in/richardson-jean-70335a136/  "><img src="icons/linkedin1.png" alt="My Picture"></a>
+                <a href="https://github.com/RichardsonJean/"><img src="icons/github.png" alt="My Picture"></a>
+                <a href="https://www.instagram.com/richardson.jean.52/"><img src="icons/instagram3.png" alt="My Picture"></a>
                
             </div>
           </div>
-          <div class="nav-toggler">
+          <!--<div class="nav-toggler">
               <span></span>
-          </div>
-          <ul class="nav">
-              <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-              <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-              <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-              <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-              <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-          </ul>
+          </div>-->
+           
+            <ul class="nav">
+                <div id="nav_title">
+                    <h2 class="dark">Table Of Contents</h2>
+                </div>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+          
       </div>
        <!-------------------------End Aside-------------->
         <!-------------------------start main content-------------->
@@ -624,21 +631,21 @@
   <!-----------------------------End Main container------------------------------>
   <!-----------------------start Switcher style----------------------------------- -->
   <div class="style-switcher">
-      <div class="style-switcher-toggler s-icon">
-          <i class="fas fa-cog fa-spin"></i>
-      </div>
-      <div class="day-night s-icon">
-          <i class="fas fa-moon"></i>
-      </div>
-      <h4>Theme Colors</h4>
-      <div class="colors">
-          <span class="color_1" onclick="setActiveStyle('color_1')"></span>
-          <span class="color_2" onclick="setActiveStyle('color_2')"></span>
-          <span class="color_3" onclick="setActiveStyle('color_3')"></span>
-          <span class="color_4" onclick="setActiveStyle('color_4')"></span>
-          <span class="color_5" onclick="setActiveStyle('color_5')"></span>
-      </div>
-  </div>
+    <!--<div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>-->
+    <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+    </div>
+    <!--<h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color_1" onclick="setActiveStyle('color_1')"></span>
+        <span class="color_2" onclick="setActiveStyle('color_2')"></span>
+        <span class="color_3" onclick="setActiveStyle('color_3')"></span>
+        <span class="color_4" onclick="setActiveStyle('color_4')"></span>
+        <span class="color_5" onclick="setActiveStyle('color_5')"></span>
+    </div>-->
+</div>
   <!-----------------------end Switcher----------------------------------- -->
     
      

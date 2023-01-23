@@ -1,5 +1,5 @@
 //toggle style switcher
-const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
+/*const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggler.addEventListener("click", () =>{
     document.querySelector(".style-switcher").classList.toggle("open");
 })
@@ -23,7 +23,7 @@ function setActiveStyle(color)
     
     })
 }
-
+*/
 //light and dark mode
 //localStorage.setItem("color", color);
 /*changeColor();

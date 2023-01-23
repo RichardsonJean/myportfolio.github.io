@@ -95,7 +95,7 @@ anime.timeline({loop: true})
 
 //end anime
 
-//Aside
+//sidebar
 
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
@@ -151,7 +151,7 @@ const nav = document.querySelector(".nav"),
             }
         }
       }
-      document.querySelector(".hire-me").addEventListener("click", function(){
+      /*document.querySelector(".hire-me").addEventListener("click", function(){
           const sectionIndex = this.getAttribute("data-section-index");
           //console.log(sectionIndex);
           showSection(this);
@@ -160,7 +160,7 @@ const nav = document.querySelector(".nav"),
           addBackSection(sectionIndex);
       })
 
-      const navTogglerBtn = document.querySelector(".nav-toggler"),
+      /*const navTogglerBtn = document.querySelector(".nav-toggler"),
             aside = document.querySelector(".aside");
             navTogglerBtn.addEventListener("click", () => {
                 asideSectionTogglerBtn();
@@ -171,6 +171,6 @@ const nav = document.querySelector(".nav"),
                 for(let i=0; i<totalSection; i++){
                     allSection[i].classList.toggle("open");
                 }
-            }
+            }*/
 
 

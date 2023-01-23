@@ -223,11 +223,13 @@ transform: translate3d(0px, 0, 0);
 /*the menu button itself*/
 .menu-trigger {
 	position: absolute;
-	top: 3px;
-	width: 53px;
+	top: 5px;
+	width: 50px;
 	height: 50px;
 	cursor: pointer;
-	background-image: url(../images/menu_iconS.png);
+	/*background-image: url(../images/menu_iconS.png) linear-gradient(purple);*/
+    background-image:linear-gradient(to right, rgba(128, 0, 128, 0.424) 0%,
+    rgba(255, 255, 255, 0.417) 50%), url(../images/menu_iconS.png);
 	background-repeat: no-repeat;
    
 	z-index: 999;

@@ -156,6 +156,9 @@ main-content{
     transition: all 0.3s ease;
     margin-bottom: 50px;
 }
+form .btn{
+    margin-bottom: 80px !important;
+}
 .btn:hover{
     transform: scale(1.05);
 }

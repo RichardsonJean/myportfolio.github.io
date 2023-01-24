@@ -10,7 +10,7 @@
    
     /*border-radius: 5px;*/
     z-index: 101;
-    transition: all 0.3s ease;
+    transition: all 1.5s ease;
     transform: translateX(100%);
   
 }
@@ -29,7 +29,7 @@
     border: 1px solid var(--bg-black-50);
     margin-left: 25px;
     cursor: pointer;
-    transition: all 2.3s ease;
+    transition: all 1.5s ease;
     border-radius: 50%;
 
 }
@@ -83,3 +83,12 @@
     background:#1854b4;
 
 }*/
+
+@media (max-width:991px) {
+    .style-switcher{
+        right: 70px !important;
+    }
+    .style-switcher .day-night{
+        top: 2px;
+    }
+}

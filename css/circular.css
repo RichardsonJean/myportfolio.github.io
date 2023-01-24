@@ -85,4 +85,10 @@ li.slideout:nth-child(6) {
 	transform: translateX(-200px) ;
 }
 
+@media (max-width:991px) {
+	#share {
+		margin-bottom: 70px;
+	}
+}
+
 

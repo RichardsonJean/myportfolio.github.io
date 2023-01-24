@@ -121,7 +121,7 @@ main-content{
     content: '';
     height: 4px;
     width: 50px;
-    background-color: var(--skin-color);
+    background-color: var(--peau-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -130,7 +130,7 @@ main-content{
     content: '';
     height: 4px;
     width: 25px;
-    background-color: var(--skin-color);
+    background-color: var(--peau-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -153,7 +153,7 @@ main-content{
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: var(--skin-color);
+    background: var(--peau-color);
     transition: all 0.5s ease;
     margin-bottom: 50px;
 }
@@ -266,7 +266,7 @@ transform: translate3d(0px, 0, 0);
    
 	font-size: 25px;
 	font-weight: 900;
-	text-shadow: 1px 1px 2px var(--skin-color);
+	text-shadow: 1px 1px 2px var(--peau-color);
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -295,7 +295,7 @@ transform: translate3d(0px, 0, 0);
     color: #fff;
     text-align: center;
     padding: 50px 35px;
-    border: 1px solid var(--skin-color);
+    border: 1px solid var(--peau-color);
     background: rgba(192, 192, 192, 0.342);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -307,14 +307,14 @@ transform: translate3d(0px, 0, 0);
 
 .sidebar .logo img{
     width: 80px;
-    border: 5px solid var(--skin-color);
+    border: 5px solid var(--peau-color);
     border-radius: 50%;
 }
 .sidebar .logo .links img{
     width: 30px;
     border-radius: 50%;
     margin: 15px 2px;
-   background: var(--skin-color);
+   background: var(--peau-color);
 }
 .sidebar .logo a{
     color: var(--text-black-900);
@@ -328,7 +328,7 @@ transform: translate3d(0px, 0, 0);
 /*.sidebar .logo a span{
     font-family: 'Train One', cursive;
     font-size: 40px;
-    color: var(--skin-color);
+    color: var(--peau-color);
 
 }
 .sidebar .logo a::before{
@@ -336,8 +336,8 @@ transform: translate3d(0px, 0, 0);
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--peau-color);
+    border-left: 5px solid var(--peau-color);
     bottom: 0;
     left: 0;
 
@@ -348,8 +348,8 @@ transform: translate3d(0px, 0, 0);
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
+    border-top: 5px solid var(--peau-color);
+    border-right: 5px solid var(--peau-color);
     top: 0;
     right: 0;
 }*/
@@ -371,7 +371,7 @@ transform: translate3d(0px, 0, 0);
 .aside .nav-toggler span{
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: var(--peau-color);
     display: inline-block;
     position: relative;
 }
@@ -382,7 +382,7 @@ transform: translate3d(0px, 0, 0);
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: var(--peau-color);
     position: absolute;
     top: -6px;
     left: 0;
@@ -400,7 +400,7 @@ transform: translate3d(0px, 0, 0);
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--skin-color);
+    background: var(--peau-color);
     position: absolute;
     top: 6px;
     left: 0;
@@ -419,12 +419,12 @@ transform: translate3d(0px, 0, 0);
     font-size: 16px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid var(--skin-color);
+    border-bottom: 1px solid var(--peau-color);
     color: var(--text-black-900);
     padding: 5px 15px;
 }
 .sidebar .nav li a.active{
-    color: var(--skin-color);
+    color: var(--peau-color);
 }
 .sidebar .nav li a i{
     margin-right: 15px;
@@ -447,14 +447,14 @@ h3.hello span{
     font-family: 'Train One', cursive;
     font-size: 30px;
     font-weight: 700;
-    color: var(--skin-color);
+    color: var(--peau-color);
 }
 h3.my-profession{
     font-size: 30px;
     margin: 15px 0;
 }
 .typing{
-    color: var(--skin-color);
+    color: var(--peau-color);
     font-family: 'Train One', cursive;
 }
 .home-info h3, .home-info .btn{
@@ -475,7 +475,7 @@ h3.my-profession{
     color: #fff;
     text-align: center;
     padding: 50px 35px;
-    border: 1px solid var(--skin-color);
+    border: 1px solid var(--peau-color);
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -485,7 +485,7 @@ h3.my-profession{
 }
 .card img{
     width: 140px;
-    border: 5px solid var(--skin-color);
+    border: 5px solid var(--peau-color);
     border-radius: 50%;
 }
 
@@ -512,8 +512,8 @@ h3.my-profession{
     position: absolute;
     width: 80px;
     height: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
+    border-bottom: 10px solid var(--peau-color);
+    border-right: 10px solid var(--peau-color);
     right: 20px;
     bottom: -40px;
 
@@ -524,8 +524,8 @@ h3.my-profession{
     width: 80px;
     height: 80px;
     /*background: red;/
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
+    border-top: 10px solid var(--peau-color);
+    border-left: 10px solid var(--peau-color);
     left: -20px;
     top: -40px;
 
@@ -554,7 +554,7 @@ h3.my-profession{
     color: var(--text-black-900);
 }
 .about .about-content .about-text h3 span{
-    color: var(--skin-color);
+    color: var(--peau-color);
 }
 .about .about-content .about-text p{
     font-size: 16px;
@@ -633,7 +633,7 @@ h3.my-profession{
     top: 0;
     height: 100%;
     border-radius: 4px;
-    background-color: var(--skin-color);
+    background-color: var(--peau-color);
 }
 .about .about-content .skills .skill-item .skill-percent{
     position: absolute;
@@ -690,7 +690,7 @@ h3.my-profession{
     height: 100%;
     left: 7px;
     top: 0;
-    background-color: var(--skin-color);
+    background-color: var(--peau-color);
 }
 .about .about-content .timeline .circle-dot{
     position: absolute;
@@ -699,7 +699,7 @@ h3.my-profession{
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: var(--skin-color);
+    background-color: var(--peau-color);
 }
 .about .about-content .timeline .timeline-date{
     font-weight: 400;
@@ -756,11 +756,11 @@ h3.my-profession{
 .service .service-item .service-item-inner .icon .fa{
     font-size: 40px;
     line-height: 60px;
-    color: var(--skin-color);
+    color: var(--peau-color);
     transition: all 0.5s ease;
 }
 .service .service-item .service-item-inner:hover .icon{
-    background: var(--skin-color);
+    background: var(--peau-color);
 }
 .service .service-item .service-item-inner:hover .icon .fa{
     font-size: 25px;
@@ -808,7 +808,7 @@ h3.my-profession{
 }
 /* -----------contact--------------*/
 .contact-title{
-    color: var(--skin-color);
+    color: var(--peau-color);
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -831,7 +831,7 @@ h3.my-profession{
 }
 .contact .contact-info-item .icon .fa{
     font-size: 25px;
-    color: var(--skin-color);
+    color: var(--peau-color);
 }
 .contact .contact-info-item h4{
     font-size: 18px;

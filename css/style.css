@@ -139,6 +139,7 @@ main-content{
 .row{
   
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right:-15px;
@@ -263,7 +264,6 @@ transform: translate3d(0px, 0, 0);
 	
 }
 .nav #nav_title h2 {
-   
 	font-size: 25px;
 	font-weight: 900;
 	text-shadow: 1px 1px 2px var(--peau-color);
@@ -306,25 +306,35 @@ transform: translate3d(0px, 0, 0);
 }
 
 .sidebar .logo img{
-    width: 80px;
+    width: 130px;
     border: 5px solid var(--peau-color);
     border-radius: 50%;
+    margin-bottom: 20px;
 }
-.sidebar .logo .links img{
-    width: 30px;
-    border-radius: 50%;
-    margin: 15px 2px;
-   background: var(--peau-color);
+.sidebar .logo .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .sidebar .logo a{
     color: var(--text-black-900);
     font-weight: 700;
     /*background: red;*/
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
+    padding: 5px;
+    font-size: 20px;
     position: relative;
+    margin: 2000px 20px;
+    background: var(--bg-black-900);
+   
 }
+/*.sidebar .logo .links a i{
+    width: 40px;
+    border-radius: 50%;
+    margin: 15px 2px;
+    border: 1px solid var(--peau-color);
+   /*background: var(--peau-color);/
+}/*
 /*.sidebar .logo a span{
     font-family: 'Train One', cursive;
     font-size: 40px;
@@ -466,8 +476,140 @@ h3.my-profession{
     color: var(--text-black-700);
     margin-left: 200px;
 }
+/*Start Big Profile*/
+.row .mycontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+   
+   
+    
+}
+.row .mycontainer .mybox{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: #f00;
+   /* margin: 20px 30px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 165px !important;
+}
+.row .mycontainer .mybox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, rgba(132, 7, 132, 0.579) 20%, rgba(255, 0, 0, 0.55));
+}
+.row .mycontainer .mybox::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, var(--peau-color) 50%, #ff0058);
+    filter: blur(30px);
+}
+/*.mycontainer .mybox:nth-child(1)::before,
+.mycontainer .mybox:nth-child(1)::after{
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+.mycontainer .mybox:nth-child(2)::before,
+.mycontainer .mybox:nth-child(2)::after{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}*/
+.mycontainer .mybox b{
+    position: absolute;
+    inset: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.mycontainer .mybox img{
+    position: absolute;
+    z-index: 3;
+    scale: 0.8;
+    opacity: 0.25;
+    transition: 0.5s;
+    height: 350px;
+}
+.mycontainer .mybox:hover img{
+    scale: 0.6;
+    opacity: 0.9;
+    transform: translateY(-80px);
+}
+.mycontainer .mybox .mycontent{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    transform: scale(0);
+    z-index: 3;
+   
+}
+.mycontainer .mybox:hover .mycontent{
+    transform: scale(1);
+    bottom: 35px;
+}
+.mycontainer .mybox .mycontent h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Train One', cursive;
+}
+.mycontainer .mybox .mycontent h2 span{
+    font-weight: 300;
+    font-size: 0.75em;
+    font-family: 'Train One', cursive;
 
-.card{
+}
+.mycontainer .mybox .links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+.mycontainer .mybox .links li{
+    list-style: none;
+}
+.mycontainer .mybox .links li a{
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.mycontainer .mybox .links li a:hover{
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+/*End Big Profile*/
+
+/*.card{
   
     width: 50%;
     max-width: 500px;
@@ -499,7 +641,7 @@ h3.my-profession{
 }
 .card .links img:hover{
     background: #0173ff;
-}
+}*/
 /*.home .home-img{
     flex: 0 0 40%;
     max-width: 40%;
@@ -650,6 +792,9 @@ h3.my-profession{
     margin-top: 30px;
     margin-bottom: 1%;
     /*background-color: red;*/
+}
+.experience .title{
+    margin-top: -50px !important;
 }
 /*.about .about-content .experience{
     background-color: rosybrown;
@@ -925,13 +1070,13 @@ h3.my-profession{
         display: block;
         margin-left: 0;
     }
-    .nav #nav_title h2{
-        display: none;
-    }
+   
     .home-info h3, .home-info .btn, .home-info p{
         margin-left: 50px;
-
-}
+    }
+    .experience .title{
+        margin-top: -70px !important;
+    }
 }
 
 @media (max-width:991px) {
@@ -950,8 +1095,11 @@ h3.my-profession{
         display: none;
     }*/
 
-    .card{
+    /*.card{
         display: none;
+    }*/
+    .mybox{
+        display: none !important;
     }
     .sidebar{
        
@@ -966,6 +1114,10 @@ h3.my-profession{
         margin-left: -200px;
         
     }
+    .nav #nav_title h2{
+        display: none;
+    }
+    
     .sidebar .logo{
         display: inline-block;
        
@@ -988,7 +1140,9 @@ h3.my-profession{
         max-width: 100%;
        /*background-color: red;*/
     }
-    
+    .experience .title{
+        margin-top: 0px !important;
+    }
 
     
 

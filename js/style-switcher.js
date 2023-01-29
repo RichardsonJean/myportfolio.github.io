@@ -34,7 +34,7 @@ function changeColor(){
         }
     })
 }*/
-const dayNight = document.querySelector(".day-night");
+/*const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", ()=>{
     dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");
@@ -47,6 +47,42 @@ window.addEventListener("load", () =>{
     }else{
         dayNight.querySelector("i").classList.add("fa-moon");
     }
-})
+})*/
+
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector("#mydark");
+const enabledDarkMode = () => {
+    /*darkMode.querySelector("i").classList.toggle("fa-sun");
+    darkMode.querySelector("i").classList.toggle("fa-moon");*/
+    document.body.classList.add("dark");
+    localStorage.setItem("darkMode", "enabled");
+    darkModeToggle.querySelector("i").classList.remove("fa-moon");
+    darkModeToggle.querySelector("i").classList.add("fa-sun");
+    
+};
+
+const disableDarkMode = () => {
+    /*darkMode.querySelector("i").classList.toggle("fa-sun");
+    darkMode.querySelector("i").classList.toggle("fa-moon");*/
+    document.body.classList.remove("dark");
+    localStorage.setItem("darkMode", null);
+    darkModeToggle.querySelector("i").classList.remove("fa-sun");
+    darkModeToggle.querySelector("i").classList.add("fa-moon");
+};
+
+if(darkMode === "enabled"){
+    enabledDarkMode();
+}
+
+darkModeToggle.addEventListener("click", () => {
+    darkMode = localStorage.getItem("darkMode");
+    if(darkMode !== "enabled"){
+        enabledDarkMode();
+        console.log(darkMode);
+    }else{
+        disableDarkMode();
+        console.log(darkMode);
+    }
+});
 
 

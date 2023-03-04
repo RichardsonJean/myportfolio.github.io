@@ -1031,6 +1031,23 @@ h3.my-profession{
     padding: 0 50px;
     margin-bottom: 10px ;
 }
+
+/*------------------------Scrollbar--------------*/
+/*
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(--peau-color, silver);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(silver, --peau-color);
+}*/
+
 /*-------media query----------------------------------------------*/
 @media (max-width:1199px) {
     .section .container{

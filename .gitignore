@@ -1,5 +1,5 @@
 #folder or files to be ignored by git
-images
+#images
 icons
 sidebar_images
 

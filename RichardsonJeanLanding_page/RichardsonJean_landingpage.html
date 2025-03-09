@@ -29,7 +29,7 @@
             </ul>
         </div>
     </nav>
-   <!--Responsive side navbar--------------------------------------->
+   <!--****************Responsive side navbar******************************************************-->
    <div class="sidenav" id="sideNav">
     <a href="#" class="closebtn" onclick="closenav()">&#10006;</a>
     <a href="#">Home</a>
@@ -38,7 +38,7 @@
     <a href="#">Contact</a>
     <a href="#"><button type="button">Login</button></a>
    </div>
-   <!----Start Search Bar-------------------------------->
+   <!--*****************************************************Start Search Bar*****************************************************-->
    <div class="icons">
    
     <div id="search-btn" class="fas fa-search"></div>
@@ -50,7 +50,7 @@
     <label for="search-box" class="fas fa-search icons"></label>
  </form>
 </header>
-   <!-----End Search Bar-------------------------------->
+   <!--*****************************************************End Search Bar*****************************************************-->
     <div id="mybigdiv">
         <h1 id="myh1" class="heading">Find Top Talent in <span>Your Area</span></h1>
   
@@ -69,7 +69,7 @@
    
     <p id="myp">Specializing in Finance & Accounting, Administrative & Customer Support,
          Technology, Marketing & Creative, and Legal</p>
-         <!--Start Form Section ----------------------------------------------------->
+         <!--Start Form Section **************************************************-->
          <section class="mysec">
            
                   <div class="container">
@@ -437,13 +437,40 @@
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <script>
     /*Menu Script************************/
-    function opennav(){
-        document.getElementById("sideNav").style.width = "50%";
-    }
-
-    function closenav(){
-        document.getElementById("sideNav").style.width = "0%";
-    }
+    function opennav() {
+      document.getElementById("sideNav").style.width = "50%";
+      document.body.classList.add("overlay-active"); // Prevent background scroll if needed
+  }
+  
+  function closenav() {
+      document.getElementById("sideNav").style.width = "0%";
+      document.body.classList.remove("overlay-active");
+  }
+  
+  // Close the sideNav when clicking a link
+  document.querySelectorAll(".sidenav a").forEach(link => {
+      link.addEventListener("click", function () {
+          closenav();
+          setActiveLink(this);
+      });
+  });
+  
+  // Close the sideNav when clicking outside
+  window.addEventListener("click", function (event) {
+      const sidenav = document.getElementById("sideNav");
+      if (!sidenav.contains(event.target) && !event.target.classList.contains('menubtn')) {
+          closenav();
+      }
+  });
+  
+  // Function to set the active class on the clicked link
+  function setActiveLink(link) {
+      document.querySelectorAll(".sidenav a").forEach(item => {
+          item.classList.remove("active");
+      });
+      link.classList.add("active");
+  }
+  
    </script>
     <!--***********************Reviews Script****************************************/-->
 

@@ -946,10 +946,12 @@ h3.my-profession{
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    height: 300px;
 }
 .portfolio .portfolio-item-inner portfolio-img img{
     width: 100%;
     display: block;
+    
 }
 /* -----------contact--------------*/
 .contact-title{

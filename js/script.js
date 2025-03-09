@@ -173,4 +173,73 @@ const nav = document.querySelector(".nav"),
                 }
             }*/
 
+                document.addEventListener("DOMContentLoaded", function () {
+                  const form = document.querySelector("form");
+                  const captchaLabel = document.querySelector("#captchaLabel");
+                  const captchaInput = document.querySelector("#captcha");
+              
+                  let num1, num2, correctAnswer;
+              
+                  // Function to generate new captcha
+                  function generateCaptcha() {
+                      num1 = Math.floor(Math.random() * 10) + 1; // Random number between 1-10
+                      num2 = Math.floor(Math.random() * 10) + 1; // Random number between 1-10
+                      correctAnswer = num1 + num2;
+                      captchaLabel.textContent = `Are you human? (Type the result of: ${num1} + ${num2})`;
+                      captchaInput.value = ""; // Clear previous input
+                  }
+              
+                  // Call function on page load
+                  generateCaptcha();
+              
+                  form.addEventListener("submit", function (event) {
+                      let isValid = true;
+                      let name = form.querySelector("input[placeholder='Name']").value.trim();
+                      let email = form.querySelector("input[placeholder='Email']").value.trim();
+                      let captcha = captchaInput.value.trim();
+                      let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+              
+                      // Clear previous error messages
+                      document.querySelectorAll(".error-message").forEach(el => el.remove());
+              
+                      // Validate Name
+                      if (name === "") {
+                          showError("input[placeholder='Name']", "Name is required.");
+                          isValid = false;
+                      }
+              
+                      // Validate Email
+                      if (email === "") {
+                          showError("input[placeholder='Email']", "Email is required.");
+                          isValid = false;
+                      } else if (!emailPattern.test(email)) {
+                          showError("input[placeholder='Email']", "Invalid email format.");
+                          isValid = false;
+                      }
+              
+                      // Validate Captcha
+                      if (parseInt(captcha) !== correctAnswer) {
+                          showError("#captcha", "Incorrect answer. Please try again.");
+                          isValid = false;
+                          generateCaptcha(); // Regenerate captcha if incorrect
+                      }
+              
+                      // Prevent form submission if validation fails
+                      if (!isValid) {
+                          event.preventDefault();
+                      }
+                  });
+              
+                  // Function to show error message
+                  function showError(selector, message) {
+                      const inputField = document.querySelector(selector);
+                      const errorMessage = document.createElement("small");
+                      errorMessage.classList.add("error-message");
+                      errorMessage.style.color = "red";
+                      errorMessage.textContent = message;
+                      inputField.parentNode.appendChild(errorMessage);
+                  }
+              });
+              
+
 
